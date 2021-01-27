@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210127 09:38:00.376" rpa="false">
+<suite id="s1" name="Indigo" source="C:\robotics\robot_workspace\indigo">
+<suite id="s1-s1" name="Indigo" source="C:\robotics\robot_workspace\indigo\indigo.robot">
+<test id="s1-s1-t1" name="Tc1_valid">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>${OUTPUT_DIR}//driver</arg>
+</arguments>
+<msg timestamp="20210127 09:38:01.387" level="INFO">Environment variable 'PATH' set to value 'C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Python;C:\Python\Scripts;C:\xampp\mysql\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Program Files\Git\cmd;C:\Users\CTEA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\CTEA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\CTEA\AppData\Local\Microsoft\WindowsApps;C:\Users\CTEA\Desktop\robotics\geckodriver-v0.28.0-win32;C:\Users\CTEA\AppData\Roaming\npm;C:\Users\CTEA\Desktop;;C:\robotics\robot_workspace\indigo//driver'.</msg>
+<status status="PASS" starttime="20210127 09:38:01.385" endtime="20210127 09:38:01.388"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://goindigo.in</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210127 09:38:01.394" level="INFO">Opening browser 'chrome' to base url 'https://goindigo.in'.</msg>
+<status status="PASS" starttime="20210127 09:38:01.389" endtime="20210127 09:38:28.253"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210127 09:38:28.254" endtime="20210127 09:38:31.352"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210127 09:38:31.352" endtime="20210127 09:38:31.415"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//label[text()='Round Trip']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:31.416" level="INFO">Clicking element '//label[text()='Round Trip']'.</msg>
+<status status="PASS" starttime="20210127 09:38:31.416" endtime="20210127 09:38:34.307"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="or-src"]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:34.309" level="INFO">Clicking element '//input[@name="or-src"]'.</msg>
+<status status="PASS" starttime="20210127 09:38:34.308" endtime="20210127 09:38:36.515"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[@data-name="Delhi"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:36.518" level="INFO">Clicking element '(//div[@data-name="Delhi"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:36.515" endtime="20210127 09:38:37.711"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//input[@placeholder="To"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:37.712" level="INFO">Clicking element '(//input[@placeholder="To"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:37.712" endtime="20210127 09:38:38.237"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[@data-name="Kolkata"])[3]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:38.238" level="INFO">Clicking element '(//div[@data-name="Kolkata"])[3]'.</msg>
+<status status="PASS" starttime="20210127 09:38:38.238" endtime="20210127 09:38:39.399"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//i[@class="icon-close close-pass-tooltip"]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//i[@class="icon-close close-pass-tooltip"]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:39.401" level="INFO">Clicking element '//i[@class="icon-close close-pass-tooltip"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210127 09:38:41.717" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 09:38:41.177" endtime="20210127 09:38:41.718"></status>
+</kw>
+<msg timestamp="20210127 09:38:41.741" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;i class="icon-close close-pass-tooltip"&gt;&lt;/i&gt; is not clickable at point (248, 190). Other element would receive the click: &lt;div class="ui-datepicker-title"&gt;...&lt;/div&gt;
+  (Session info: chrome=88.0.4324.104)
+</msg>
+<status status="FAIL" starttime="20210127 09:38:39.401" endtime="20210127 09:38:41.741"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:39.400" endtime="20210127 09:38:41.741"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='30']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:41.743" level="INFO">Clicking element '//a[text()='30']'.</msg>
+<status status="PASS" starttime="20210127 09:38:41.742" endtime="20210127 09:38:43.264"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='10']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:43.265" level="INFO">Clicking element '//a[text()='10']'.</msg>
+<status status="PASS" starttime="20210127 09:38:43.265" endtime="20210127 09:38:44.806"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[text()='Done'])[3]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:44.808" level="INFO">Clicking element '(//button[text()='Done'])[3]'.</msg>
+<status status="PASS" starttime="20210127 09:38:44.807" endtime="20210127 09:38:45.488"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//input[@name="passenger"]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:45.489" level="INFO">Simulating Mouse Over on element '//input[@name="passenger"]'.</msg>
+<status status="PASS" starttime="20210127 09:38:45.488" endtime="20210127 09:38:46.078"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="passenger"]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:46.081" level="INFO">Clicking element '//input[@name="passenger"]'.</msg>
+<status status="PASS" starttime="20210127 09:38:46.080" endtime="20210127 09:38:46.569"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 4 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[@title="Up"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:46.571" level="INFO">Clicking element '(//button[@title="Up"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:46.571" endtime="20210127 09:38:47.377"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:46.570" endtime="20210127 09:38:47.378"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[@title="Up"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:47.379" level="INFO">Clicking element '(//button[@title="Up"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:47.379" endtime="20210127 09:38:48.036"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:47.378" endtime="20210127 09:38:48.036"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[@title="Up"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:48.037" level="INFO">Clicking element '(//button[@title="Up"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:48.037" endtime="20210127 09:38:48.947"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:48.037" endtime="20210127 09:38:48.947"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:46.570" endtime="20210127 09:38:48.947"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 3 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[@title="Up"])[3]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:48.949" level="INFO">Clicking element '(//button[@title="Up"])[3]'.</msg>
+<status status="PASS" starttime="20210127 09:38:48.948" endtime="20210127 09:38:50.102"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:48.948" endtime="20210127 09:38:50.102"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//button[@title="Up"])[3]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:50.104" level="INFO">Clicking element '(//button[@title="Up"])[3]'.</msg>
+<status status="PASS" starttime="20210127 09:38:50.104" endtime="20210127 09:38:50.866"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:50.102" endtime="20210127 09:38:50.866"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:48.947" endtime="20210127 09:38:50.866"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[text()='Done']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:50.867" level="INFO">Clicking element '//button[text()='Done']'.</msg>
+<status status="PASS" starttime="20210127 09:38:50.867" endtime="20210127 09:38:51.576"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[@class="filter-option"])[1]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:51.577" level="INFO">Clicking element '(//div[@class="filter-option"])[1]'.</msg>
+<status status="PASS" starttime="20210127 09:38:51.576" endtime="20210127 09:38:52.810"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//select[@class="form-control bw-currency-list"]</arg>
+<arg>MYR</arg>
+</arguments>
+<msg timestamp="20210127 09:38:52.811" level="INFO">Selecting options from selection list '//select[@class="form-control bw-currency-list"]' by value MYR.</msg>
+<status status="PASS" starttime="20210127 09:38:52.810" endtime="20210127 09:38:54.053"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id="currencyView"]</arg>
+</arguments>
+<msg timestamp="20210127 09:38:54.054" level="INFO">Clicking element '//div[@id="currencyView"]'.</msg>
+<status status="PASS" starttime="20210127 09:38:54.053" endtime="20210127 09:38:54.593"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//label[text()='Family &amp; Friends']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:54.594" level="INFO">Clicking element '//label[text()='Family &amp; Friends']'.</msg>
+<status status="PASS" starttime="20210127 09:38:54.594" endtime="20210127 09:38:56.280"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210127 09:38:58.282" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210127 09:38:56.280" endtime="20210127 09:38:58.282"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//span[text()='Search Flight']</arg>
+</arguments>
+<msg timestamp="20210127 09:38:58.284" level="INFO">Simulating Mouse Over on element '//span[text()='Search Flight']'.</msg>
+<status status="PASS" starttime="20210127 09:38:58.283" endtime="20210127 09:38:58.668"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210127 09:39:00.671" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210127 09:38:58.668" endtime="20210127 09:39:00.671"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[contains(text(),'Search Flight')]</arg>
+</arguments>
+<msg timestamp="20210127 09:39:00.673" level="INFO">Clicking element '//span[contains(text(),'Search Flight')]'.</msg>
+<status status="PASS" starttime="20210127 09:39:00.672" endtime="20210127 09:39:01.377"></status>
+</kw>
+<status status="PASS" starttime="20210127 09:38:01.383" endtime="20210127 09:39:01.378" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210127 09:38:00.793" endtime="20210127 09:39:01.379"></status>
+</suite>
+<status status="PASS" starttime="20210127 09:38:00.638" endtime="20210127 09:39:01.382"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Indigo">Indigo</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Indigo">Indigo.Indigo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
